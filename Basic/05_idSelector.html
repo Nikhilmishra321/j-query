@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="0" width="400px">
+      <tr>
+        <td id="name">Cell 1</td>
+        <td>Cell 2</td>
+      </tr>
+      <tr>
+        <td>Cell 3</td>
+        <td>Cell 4</td>
+      </tr>
+    </table>
+  </body>
+  <script src="/Js/jquery-3.7.1.min.js"></script>
+  //ID SELECTOR //the jQuery #id selector use the id attribute of an html tag
+  find the specific element. An id should be unique within a page so you should
+  use of # id selector
+
+  <script>
+    $(document).ready(function () {
+      $("#name").css("background-color", "pink");
+    });
+
+    $(document).ready(function () {
+      // $("p:last").css("backgroundColor","green");
+      $("p:odd").css("backgroundColor", "blue");
+    });
+  </script>
+</html>
