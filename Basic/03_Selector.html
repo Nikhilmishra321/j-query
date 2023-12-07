@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="0" width="400px">
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+
+        <tr>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+    </table>
+    
+</body>
+<script src="/Js/jquery-3.7.1.min.js"></script>
+<script>
+    // Element Selector 
+
+$(document).ready(function(){
+    $("table *").css("backgroundColor","pink");
+})
+
+// This Selector ="The query this Selector is used for selecting the current element"
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $(this).hide();
+    });
+});
+
+
+</script>
+</html>
