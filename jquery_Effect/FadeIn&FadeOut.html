@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("div").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+            // $("#btn2").click(function(){
+            //     $("div").fadeIn(5000);
+            // })
+        })
+    </script>
+
+</head>
+<body>
+    <div style="background-color: #ff9933; width: 100%;">My Effect is fadeout Effect</div>
+    <div id="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, culpa.</div>
+    <div id="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ut!</div>
+    <div id="div4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, cum!</div>
+
+
+    <button id="btn1">Fade Out(5 Second)</button>
+    <button id="btn2">Fade in(5 Second)</button>
+    
+</body>
+</html>
